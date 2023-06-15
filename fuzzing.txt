@@ -1,0 +1,4 @@
+/robots.txt
+/dvwa/
+/vulnerabilities/
+/vulnerabilities/open_redirect/source/

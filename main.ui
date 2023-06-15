@@ -1,0 +1,2922 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1090</width>
+    <height>639</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(51, 54, 61);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="header_frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(37, 55, 75);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="header_menu_icon_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item alignment="Qt::AlignLeft">
+           <widget class="QPushButton" name="menu_pushButton">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Menu</string>
+            </property>
+            <property name="icon">
+             <iconset resource="feathers.qrc">
+              <normaloff>:/feather/feather/align-left.svg</normaloff>:/feather/feather/align-left.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QFrame" name="header_head_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item alignment="Qt::AlignRight">
+           <widget class="QLabel" name="headIcon_label">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="feathers.qrc">:/feather/feather/codepen.svg</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="head_pushButton">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>WEB PENTEST UI</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignRight">
+        <widget class="QFrame" name="header_window_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="min_pushButton">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="feathers.qrc">
+              <normaloff>:/feather/feather/minimize.svg</normaloff>:/feather/feather/minimize.svg</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="max_pushButton">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="feathers.qrc">
+              <normaloff>:/feather/feather/maximize.svg</normaloff>:/feather/feather/maximize.svg</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="cancel_pushButton">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="feathers.qrc">
+              <normaloff>:/feather/feather/x.svg</normaloff>:/feather/feather/x.svg</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="main_body_frame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="left_menu_frame">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>20</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(37, 55, 75);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="menu_frame">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>175</number>
+             </property>
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item row="2" column="1">
+              <widget class="QLabel" name="label_8">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Brute Force</string>
+               </property>
+               <property name="margin">
+                <number>5</number>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_3">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Injection</string>
+               </property>
+               <property name="margin">
+                <number>5</number>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0" alignment="Qt::AlignLeft">
+              <widget class="QPushButton" name="pushButton_9">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers.qrc">
+                 <normaloff>:/feather/feather/hexagon.svg</normaloff>:/feather/feather/hexagon.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0" alignment="Qt::AlignLeft">
+              <widget class="QPushButton" name="pushButton_12">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers.qrc">
+                 <normaloff>:/feather/feather/unlock.svg</normaloff>:/feather/feather/unlock.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="0" alignment="Qt::AlignLeft">
+              <widget class="QPushButton" name="pushButton_11">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers.qrc">
+                 <normaloff>:/feather/feather/bot.png</normaloff>:/feather/feather/bot.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0" alignment="Qt::AlignLeft">
+              <widget class="QPushButton" name="pushButton_8">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers.qrc">
+                 <normaloff>:/feather/feather/web_spider.png</normaloff>:/feather/feather/web_spider.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0" alignment="Qt::AlignLeft">
+              <widget class="QPushButton" name="pushButton_7">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers.qrc">
+                 <normaloff>:/feather/feather/exploit.svg</normaloff>
+                 <selectedon>:/feather/feather/xss.jpg</selectedon>:/feather/feather/exploit.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0" alignment="Qt::AlignLeft">
+              <widget class="QPushButton" name="pushButton_10">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers.qrc">
+                 <normaloff>:/feather/feather/secret-folder.png</normaloff>:/feather/feather/secret-folder.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLabel" name="label_51">
+               <property name="text">
+                <string>DoS Attack</string>
+               </property>
+               <property name="margin">
+                <number>5</number>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="1">
+              <widget class="QLabel" name="label_7">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Bot Net</string>
+               </property>
+               <property name="margin">
+                <number>5</number>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0" alignment="Qt::AlignLeft">
+              <widget class="QPushButton" name="pushButton_37">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers.qrc">
+                 <normaloff>:/feather/feather/rotate-cw.svg</normaloff>:/feather/feather/rotate-cw.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="1">
+              <widget class="QLabel" name="label_6">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Fuzzing</string>
+               </property>
+               <property name="margin">
+                <number>5</number>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLabel" name="label_4">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Web Scrapping</string>
+               </property>
+               <property name="margin">
+                <number>5</number>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0" alignment="Qt::AlignLeft">
+              <widget class="QPushButton" name="pushButton_13">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers.qrc">
+                 <normaloff>:/feather/feather/search.svg</normaloff>:/feather/feather/search.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <widget class="QLabel" name="label_5">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Nessus</string>
+               </property>
+               <property name="margin">
+                <number>5</number>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLabel" name="label_9">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Usom</string>
+               </property>
+               <property name="margin">
+                <number>5</number>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" alignment="Qt::AlignLeft">
+              <widget class="QPushButton" name="pushButton_40">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers.qrc">
+                 <normaloff>:/feather/feather/cloud.svg</normaloff>:/feather/feather/cloud.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLabel" name="label_59">
+               <property name="text">
+                <string>Csrf</string>
+               </property>
+               <property name="margin">
+                <number>5</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="main_body_contents_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item alignment="Qt::AlignTop">
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="currentIndex">
+             <number>3</number>
+            </property>
+            <widget class="QWidget" name="xss_injection">
+             <layout class="QGridLayout" name="gridLayout_3">
+              <item row="2" column="0">
+               <widget class="QFrame" name="frame_18">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_6">
+                 <item>
+                  <widget class="QScrollArea" name="scrollArea">
+                   <property name="widgetResizable">
+                    <bool>true</bool>
+                   </property>
+                   <widget class="QWidget" name="scrollAreaWidgetContents">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>568</width>
+                      <height>185</height>
+                     </rect>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_5">
+                     <item>
+                      <widget class="QListView" name="listView"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignLeft">
+                  <widget class="QPushButton" name="pushButton_19">
+                   <property name="text">
+                    <string>Save</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="feathers.qrc">
+                     <normaloff>:/feather/feather/save.svg</normaloff>:/feather/feather/save.svg</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QFrame" name="frame_17">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_4">
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="lineEdit_2"/>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_18">
+                   <property name="text">
+                    <string>URL to attack:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="lineEdit"/>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_17">
+                   <property name="text">
+                    <string>URL to header:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0" alignment="Qt::AlignLeft">
+                  <widget class="QPushButton" name="pushButton_17">
+                   <property name="text">
+                    <string>Start</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="feathers.qrc">
+                     <normaloff>:/feather/feather/zap.svg</normaloff>:/feather/feather/zap.svg</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1" alignment="Qt::AlignLeft">
+                  <widget class="QPushButton" name="pushButton_18">
+                   <property name="text">
+                    <string>Delete</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="feathers.qrc">
+                     <normaloff>:/feather/feather/delete.svg</normaloff>:/feather/feather/delete.svg</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QFrame" name="frame_16">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_5">
+                 <item row="3" column="0" alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="label_19">
+                   <property name="text">
+                    <string>This Screen allows you to launch an automated scan against an application -just enter its URL below and Press 'Attack',
+Please be aware that you should only attack application that you have beenspecifically been given permission to test.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0" alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="label_15">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Automated Scan XSS Injection&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QFrame" name="frame">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_10">
+                    <item>
+                     <widget class="QPushButton" name="pushButton_3">
+                      <property name="text">
+                       <string>SQL INJECTION</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_4">
+                      <property name="text">
+                       <string>COMMAND INJECTION</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="sql_injection">
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <item>
+               <widget class="QFrame" name="frame_19">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_6">
+                 <item row="3" column="0" alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="label_20">
+                   <property name="text">
+                    <string>This Screen allows you to launch an automated scan against an application -just enter its URL below and Press 'Attack',
+Please be aware that you should only attack application that you have beenspecifically been given permission to test.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QFrame" name="frame_2">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_11">
+                    <item>
+                     <widget class="QPushButton" name="pushButton">
+                      <property name="text">
+                       <string>XSS INJECTION</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_6">
+                      <property name="text">
+                       <string>COMMAND INJECTION</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="2" column="0" alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="label_16">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Automated Scan SQL injection&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_20">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_7">
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="lineEdit_3"/>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_21">
+                   <property name="text">
+                    <string>URL to header:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="lineEdit_4"/>
+                 </item>
+                 <item row="2" column="0" alignment="Qt::AlignLeft">
+                  <widget class="QPushButton" name="pushButton_20">
+                   <property name="text">
+                    <string>Start</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="feathers.qrc">
+                     <normaloff>:/feather/feather/zap.svg</normaloff>:/feather/feather/zap.svg</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_22">
+                   <property name="text">
+                    <string>URL to attack:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1" alignment="Qt::AlignLeft">
+                  <widget class="QPushButton" name="pushButton_21">
+                   <property name="text">
+                    <string>Delete</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="feathers.qrc">
+                     <normaloff>:/feather/feather/delete.svg</normaloff>:/feather/feather/delete.svg</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_21">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_7">
+                 <item>
+                  <widget class="QScrollArea" name="scrollArea_2">
+                   <property name="widgetResizable">
+                    <bool>true</bool>
+                   </property>
+                   <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>568</width>
+                      <height>185</height>
+                     </rect>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_8">
+                     <item>
+                      <widget class="QListView" name="listView_2"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignLeft">
+                  <widget class="QPushButton" name="pushButton_24">
+                   <property name="text">
+                    <string>Save</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="feathers.qrc">
+                     <normaloff>:/feather/feather/save.svg</normaloff>:/feather/feather/save.svg</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="command_injection">
+             <layout class="QVBoxLayout" name="verticalLayout_12">
+              <item>
+               <widget class="QFrame" name="frame_23">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_9">
+                 <item row="1" column="0" alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="label_25">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Automated Scan Command Injection&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0" alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="label_26">
+                   <property name="text">
+                    <string>This Screen allows you to launch an automated scan against an application -just enter its URL below and Press 'Attack',
+Please be aware that you should only attack application that you have beenspecifically been given permission to test.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QFrame" name="frame_3">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_12">
+                    <item>
+                     <widget class="QPushButton" name="pushButton_2">
+                      <property name="text">
+                       <string>XSS INJECTION</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_22">
+                      <property name="text">
+                       <string>SQL INJECTION</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="data">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_10">
+                 <item row="2" column="0" alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="label_28">
+                   <property name="text">
+                    <string>URL to attack:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="lineEdit_8"/>
+                 </item>
+                 <item row="1" column="0" alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="label">
+                   <property name="text">
+                    <string>data</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLineEdit" name="lineEdit_7"/>
+                 </item>
+                 <item row="0" column="0" alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="label_27">
+                   <property name="text">
+                    <string>URL to header:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="lineEdit_9"/>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QPushButton" name="pushButton_27">
+                   <property name="text">
+                    <string>Start</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="feathers.qrc">
+                     <normaloff>:/feather/feather/zap.svg</normaloff>:/feather/feather/zap.svg</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1" alignment="Qt::AlignLeft">
+                  <widget class="QPushButton" name="pushButton_28">
+                   <property name="text">
+                    <string>Delete</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="feathers.qrc">
+                     <normaloff>:/feather/feather/delete.svg</normaloff>:/feather/feather/delete.svg</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_22">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_10">
+                 <item>
+                  <widget class="QScrollArea" name="scrollArea_3">
+                   <property name="widgetResizable">
+                    <bool>true</bool>
+                   </property>
+                   <widget class="QWidget" name="scrollAreaWidgetContents_3">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>568</width>
+                      <height>159</height>
+                     </rect>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_11">
+                     <item>
+                      <widget class="QListView" name="listView_3"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignLeft">
+                  <widget class="QPushButton" name="pushButton_26">
+                   <property name="text">
+                    <string>Save</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="feathers.qrc">
+                     <normaloff>:/feather/feather/save.svg</normaloff>:/feather/feather/save.svg</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="dos_attack">
+             <layout class="QVBoxLayout" name="verticalLayout_25">
+              <item>
+               <widget class="QFrame" name="frame_11">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_26">
+                 <item>
+                  <widget class="QFrame" name="frame_12">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_14">
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="lineEdit_17"/>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_52">
+                      <property name="text">
+                       <string>Port         :</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_53">
+                      <property name="text">
+                       <string>Target Ip :</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLineEdit" name="lineEdit_16"/>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QTimeEdit" name="timeEdit">
+                      <property name="displayFormat">
+                       <string>ss</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="1" alignment="Qt::AlignLeft">
+                     <widget class="QPushButton" name="pushButton_38">
+                      <property name="text">
+                       <string>Start</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="feathers.qrc">
+                        <normaloff>:/feather/feather/zap.svg</normaloff>:/feather/feather/zap.svg</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>32</width>
+                        <height>32</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_26">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_27">
+                 <item>
+                  <widget class="QLabel" name="label_56">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_57">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_13">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_13">
+                 <item>
+                  <widget class="QLabel" name="label_54">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string> Attack Number:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_55">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>0</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="web_scrapping">
+             <layout class="QVBoxLayout" name="verticalLayout_13">
+              <item>
+               <widget class="QScrollArea" name="scrollArea_4">
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents_4">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>318</width>
+                   <height>1266</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_8">
+                  <item row="0" column="0">
+                   <widget class="QFrame" name="frame_5">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_16">
+                     <item>
+                      <widget class="QPushButton" name="pushButton_23">
+                       <property name="text">
+                        <string>Owasp Top 10 2021 Veri  Getir</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_23">
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QListView" name="listView_4">
+                       <property name="minimumSize">
+                        <size>
+                         <width>200</width>
+                         <height>200</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QFrame" name="frame_4">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_15">
+                     <item>
+                      <widget class="QLabel" name="label_24">
+                       <property name="text">
+                        <string>A01_2021-Broken_Access_Control</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableWidget" name="tableWidget_2">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0, 0, 176);
+background-color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+                       </property>
+                       <row>
+                        <property name="text">
+                         <string>values</string>
+                        </property>
+                       </row>
+                       <column>
+                        <property name="text">
+                         <string>CWEs Mapped</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Exploit</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Impact</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total Occurrences</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total CVEs</string>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_29">
+                       <property name="text">
+                        <string>A02_2021-Cryptographic_Failures</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableWidget" name="tableWidget_3">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0, 0, 176);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <row>
+                        <property name="text">
+                         <string>values</string>
+                        </property>
+                       </row>
+                       <column>
+                        <property name="text">
+                         <string>CWEs Mapped</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Exploit</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Impact</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total Occurrences</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total CVEs</string>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_30">
+                       <property name="text">
+                        <string>A03_2021-Injection</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableWidget" name="tableWidget_4">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0, 0, 176);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <row>
+                        <property name="text">
+                         <string>values</string>
+                        </property>
+                       </row>
+                       <column>
+                        <property name="text">
+                         <string>CWEs Mapped</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Exploit</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Impact</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total Occurrences</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total CVEs</string>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_31">
+                       <property name="text">
+                        <string>A04_2021-Insecure_Design</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableWidget" name="tableWidget_5">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0, 0, 176);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <row>
+                        <property name="text">
+                         <string>values</string>
+                        </property>
+                       </row>
+                       <column>
+                        <property name="text">
+                         <string>CWEs Mapped</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Exploit</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Impact</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total Occurrences</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total CVEs</string>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_32">
+                       <property name="text">
+                        <string>A05_2021-Security_Misconfiguration</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableWidget" name="tableWidget_6">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0, 0, 176);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <row>
+                        <property name="text">
+                         <string>values</string>
+                        </property>
+                       </row>
+                       <column>
+                        <property name="text">
+                         <string>CWEs Mapped</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Exploit</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Impact</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total Occurrences</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total CVEs</string>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_33">
+                       <property name="text">
+                        <string>A06_2021-Vulnerable_and_Outdated_Components</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableWidget" name="tableWidget_7">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0, 0, 176);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <row>
+                        <property name="text">
+                         <string>values</string>
+                        </property>
+                       </row>
+                       <column>
+                        <property name="text">
+                         <string>CWEs Mapped</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Exploit</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Impact</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total Occurrences</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total CVEs</string>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_34">
+                       <property name="text">
+                        <string>A07_2021-Identification_and_Authentication_Failures</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableWidget" name="tableWidget_8">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0, 0, 176);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <row>
+                        <property name="text">
+                         <string>values</string>
+                        </property>
+                       </row>
+                       <column>
+                        <property name="text">
+                         <string>CWEs Mapped</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Exploit</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Impact</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total Occurrences</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total CVEs</string>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_35">
+                       <property name="text">
+                        <string>A08_2021-Software_and_Data_Integrity_Failures</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableWidget" name="tableWidget_9">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0, 0, 0);color: rgb(0, 0, 176);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <row>
+                        <property name="text">
+                         <string>values</string>
+                        </property>
+                       </row>
+                       <column>
+                        <property name="text">
+                         <string>CWEs Mapped</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Exploit</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Impact</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total Occurrences</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total CVEs</string>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_36">
+                       <property name="text">
+                        <string>A09_2021-Security_Logging_and_Monitoring_Failures</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableWidget" name="tableWidget">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0, 0, 176);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <row>
+                        <property name="text">
+                         <string>values</string>
+                        </property>
+                       </row>
+                       <column>
+                        <property name="text">
+                         <string>CWEs Mapped</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Exploit</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Impact</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total Occurrences</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total CVEs</string>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_37">
+                       <property name="styleSheet">
+                        <string notr="true"/>
+                       </property>
+                       <property name="text">
+                        <string>A10_2021-Server-Side_Request_Forgery_%28SSRF%29/</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableWidget" name="tableWidget_10">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0, 0, 176);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <row>
+                        <property name="text">
+                         <string>values</string>
+                        </property>
+                       </row>
+                       <column>
+                        <property name="text">
+                         <string>CWEs Mapped</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Incidence Rate</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Exploit</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Weighted Impact</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Max Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Avg Coverage</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total Occurrences</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Total CVEs</string>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="nessus">
+             <layout class="QVBoxLayout" name="verticalLayout_21">
+              <item>
+               <widget class="QTextBrowser" name="textBrowser"/>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="fuzzing">
+             <layout class="QVBoxLayout" name="verticalLayout_24">
+              <item>
+               <widget class="QLabel" name="label_47">
+                <property name="font">
+                 <font>
+                  <pointsize>24</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>FUZZING</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_24">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_13">
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="lineEdit_14"/>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_49">
+                   <property name="text">
+                    <string>URL to header:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="lineEdit_15"/>
+                 </item>
+                 <item row="2" column="0" alignment="Qt::AlignLeft">
+                  <widget class="QPushButton" name="pushButton_34">
+                   <property name="text">
+                    <string>Start</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="feathers.qrc">
+                     <normaloff>:/feather/feather/light.svg</normaloff>:/feather/feather/light.svg</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_50">
+                   <property name="text">
+                    <string>URL to attack:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1" alignment="Qt::AlignLeft">
+                  <widget class="QPushButton" name="pushButton_35">
+                   <property name="text">
+                    <string>Stop</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="feathers.qrc">
+                     <normaloff>:/feather/feather/stopping.svg</normaloff>:/feather/feather/stopping.svg</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_48">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_25">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_22">
+                 <item>
+                  <widget class="QScrollArea" name="scrollArea_6">
+                   <property name="widgetResizable">
+                    <bool>true</bool>
+                   </property>
+                   <widget class="QWidget" name="scrollAreaWidgetContents_6">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>91</width>
+                      <height>91</height>
+                     </rect>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_23">
+                     <item>
+                      <widget class="QListView" name="listView_7"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignLeft">
+                  <widget class="QPushButton" name="pushButton_36">
+                   <property name="text">
+                    <string>Save</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="feathers.qrc">
+                     <normaloff>:/feather/feather/save.svg</normaloff>:/feather/feather/save.svg</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="bot_net">
+             <widget class="QListView" name="listView_8">
+              <property name="geometry">
+               <rect>
+                <x>340</x>
+                <y>20</y>
+                <width>256</width>
+                <height>481</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QFrame" name="frame_27">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>50</y>
+                <width>321</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QPushButton" name="pushButton_39">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>10</y>
+                 <width>75</width>
+                 <height>23</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>DWWA BOT</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_58">
+               <property name="geometry">
+                <rect>
+                 <x>90</x>
+                 <y>10</y>
+                 <width>231</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Botu Çalıştırın</string>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="brute_force">
+             <layout class="QVBoxLayout" name="verticalLayout_17">
+              <item>
+               <widget class="QScrollArea" name="scrollArea_5">
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents_5">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>620</width>
+                   <height>748</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_18">
+                  <item>
+                   <widget class="QFrame" name="frame_6">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_14">
+                     <item>
+                      <widget class="QLabel" name="label_38">
+                       <property name="text">
+                        <string>BRUTE FORCE ATTACK</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_39">
+                       <property name="text">
+                        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;İt is type of cyptanalytic attack that uses a simple trial and error,or guessing&lt;/p&gt;&lt;p&gt;method. In other words -- a criminal gains access to a user's account by guesssing&lt;/p&gt;&lt;p&gt;the login credentials.&lt;/p&gt;&lt;p&gt;**This Screen allows you to launch an automated scan against an application -just enter its URL below and Press 'Attack',&lt;/p&gt;&lt;p&gt;Please be aware that you should only attack application that you have beenspecifically been given permission to test**&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;&amp;quot;In the url, put '$P' in the username field and '$U' in the password field.&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       </property>
+                       <property name="textFormat">
+                        <enum>Qt::RichText</enum>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_8">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>200</height>
+                     </size>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_14">
+                     <item>
+                      <widget class="QTableWidget" name="tableWidget_11">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>200</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(12, 6, 76);
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <layout class="QGridLayout" name="gridLayout_11">
+                       <item row="2" column="2">
+                        <widget class="QLineEdit" name="lineEdit_6"/>
+                       </item>
+                       <item row="3" column="0" colspan="2">
+                        <widget class="QPushButton" name="pushButton_25">
+                         <property name="text">
+                          <string>Save</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="0">
+                        <widget class="QLabel" name="label_41">
+                         <property name="text">
+                          <string>Password  :</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="2">
+                        <widget class="QLineEdit" name="lineEdit_5"/>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="label_40">
+                         <property name="text">
+                          <string>Username :</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_9">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_12">
+                     <item row="0" column="1">
+                      <widget class="QLineEdit" name="lineEdit_10"/>
+                     </item>
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="label_42">
+                       <property name="text">
+                        <string>Url to Header   :</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="label_43">
+                       <property name="text">
+                        <string>Url to Attack</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="QLineEdit" name="lineEdit_11"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_7">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_15">
+                     <item>
+                      <widget class="QPushButton" name="pushButton_30">
+                       <property name="styleSheet">
+                        <string notr="true">
+background-color: rgb(0, 0, 127);</string>
+                       </property>
+                       <property name="text">
+                        <string>Attack</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="feathers.qrc">
+                         <normaloff>:/feather/feather/light.svg</normaloff>:/feather/feather/light.svg</iconset>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>32</width>
+                         <height>32</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="pushButton_31">
+                       <property name="text">
+                        <string>Save</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="feathers.qrc">
+                         <normaloff>:/feather/feather/save.svg</normaloff>:/feather/feather/save.svg</iconset>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>32</width>
+                         <height>32</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="pushButton_29">
+                       <property name="text">
+                        <string>Clear</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="feathers.qrc">
+                         <normaloff>:/feather/feather/delete.svg</normaloff>:/feather/feather/delete.svg</iconset>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>32</width>
+                         <height>32</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QListView" name="listView_5">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>200</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="usom">
+             <layout class="QVBoxLayout" name="verticalLayout_19">
+              <item>
+               <widget class="QFrame" name="frame_10">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_44">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>109</y>
+                   <width>62</width>
+                   <height>16</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>input Domain</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_45">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>140</y>
+                   <width>74</width>
+                   <height>16</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>Domain-Control</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton_32">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>180</y>
+                   <width>79</width>
+                   <height>40</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>Control</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="feathers.qrc">
+                   <normaloff>:/feather/feather/search.svg</normaloff>:/feather/feather/search.svg</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>32</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                </widget>
+                <widget class="QListView" name="listView_6">
+                 <property name="geometry">
+                  <rect>
+                   <x>260</x>
+                   <y>70</y>
+                   <width>311</width>
+                   <height>421</height>
+                  </rect>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_46">
+                 <property name="geometry">
+                  <rect>
+                   <x>50</x>
+                   <y>0</y>
+                   <width>451</width>
+                   <height>61</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>24</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>USOM malicious domain search</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton_33">
+                 <property name="geometry">
+                  <rect>
+                   <x>100</x>
+                   <y>180</y>
+                   <width>79</width>
+                   <height>40</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string> Delete</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="feathers.qrc">
+                   <normaloff>:/feather/feather/delete.svg</normaloff>:/feather/feather/delete.svg</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>32</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                </widget>
+                <widget class="QWidget" name="layoutWidget">
+                 <property name="geometry">
+                  <rect>
+                   <x>90</x>
+                   <y>109</y>
+                   <width>135</width>
+                   <height>48</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_20">
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_12">
+                    <property name="placeholderText">
+                     <string>input domain</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_13"/>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="main_right_frame">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(37, 55, 75);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item alignment="Qt::AlignTop">
+           <widget class="QFrame" name="frame_14">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item alignment="Qt::AlignTop">
+              <widget class="QLabel" name="label_10">
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>About</string>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignTop">
+              <widget class="QLabel" name="label_11">
+               <property name="text">
+                <string>App Designed and Developed By Vedat Arslan</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignTop">
+           <widget class="QFrame" name="frame_15">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_12">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                 <underline>true</underline>
+                </font>
+               </property>
+               <property name="text">
+                <string>Githup/</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLabel" name="label_13">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                 <underline>true</underline>
+                </font>
+               </property>
+               <property name="text">
+                <string>Linkedin/</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0" alignment="Qt::AlignLeft">
+              <widget class="QPushButton" name="pushButton_16">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers.qrc">
+                 <normaloff>:/feather/feather/mail.svg</normaloff>:/feather/feather/mail.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLabel" name="label_14">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                 <underline>true</underline>
+                </font>
+               </property>
+               <property name="text">
+                <string>Gmail/</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0" alignment="Qt::AlignLeft">
+              <widget class="QPushButton" name="pushButton_14">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers.qrc">
+                 <normaloff>:/feather/feather/github.svg</normaloff>:/feather/feather/github.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" alignment="Qt::AlignLeft">
+              <widget class="QPushButton" name="pushButton_15">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers.qrc">
+                 <normaloff>:/feather/feather/linkedin.svg</normaloff>:/feather/feather/linkedin.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="footer_frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="footer_left_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item alignment="Qt::AlignLeft">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Version 1.0 | Copyright WebToolPentest</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignRight">
+        <widget class="QFrame" name="footer_right_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <widget class="QPushButton" name="pushButton_5">
+            <property name="text">
+             <string>?</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignBottom">
+        <widget class="QFrame" name="footer_concer_frame">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>10</width>
+           <height>10</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>10</width>
+           <height>10</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+   <zorder>main_body_frame</zorder>
+   <zorder>footer_frame</zorder>
+   <zorder>header_frame</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="feathers.qrc"/>
+  <include location="feathers.qrc"/>
+ </resources>
+ <connections/>
+</ui>
