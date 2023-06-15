@@ -1,0 +1,12 @@
+/robots.txt
+/iletisim/
+/dvwa/
+/contact.php/
+/dvwa-M
+/css/
+/images/
+/includes/
+/includes/DBMS/
+/js/
+/vulnerabilities/
+/vulnerabilities/open_redirect/source/

@@ -1,0 +1,26 @@
+| ipconfig /all
+& ipconfig /all
+&& ipconfig /all
+ipconfig /all
+ls
+$(`ls`)
+| ls -l /
+; ls -l /
+& ls -l /
+&& ls -l /
+pwd
+| pwd
+; pwd
+& pwd
+&& pwd
+sysinfo
+| sysinfo
+; sysinfo
+& sysinfo
+&& sysinfo
+| systeminfo
+; systeminfo
+& systeminfo
+&& systeminfo
+
+
